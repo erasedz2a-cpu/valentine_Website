@@ -228,7 +228,12 @@ function setupMusicPlayer() {
             });
         }
     }
-
+// Set random position for floating elements
+function setRandomPosition(element) {
+    element.style.left = Math.random() * 100 + 'vw';
+    element.style.animationDelay = Math.random() * 5 + 's';
+    element.style.animationDuration = 10 + Math.random() * 20 + 's';
+}
     
     // Toggle music on button click
     musicToggle.addEventListener('click', () => {

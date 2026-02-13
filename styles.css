@@ -14,6 +14,19 @@
     --heart-explosion-size: 1.5;
 }
 
+/* تنسيقات الخطوط */
+.aref-ruqaa-regular {
+    font-family: "Aref Ruqaa", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.aref-ruqaa-bold {
+    font-family: "Aref Ruqaa", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
 body {
     margin: 0;
     min-height: 100vh;
@@ -21,9 +34,9 @@ body {
     justify-content: center;
     align-items: center;
     background: linear-gradient(135deg, var(--background-color-1), var(--background-color-2));
-    font-family: Arial, sans-serif;
+    font-family: "Aref Ruqaa", serif;
     overflow-x: hidden;
-}
+} /* 👈 تم إغلاق القوس هنا بشكل صحيح */
 
 .container {
     background: rgba(255, 255, 255, 0.9);
@@ -47,7 +60,10 @@ body {
 .heart, .bear {
     position: absolute;
     font-size: 2rem;
-    animation: float var(--float-duration) linear infinite;
+    /* فصلنا الأنيميشن للتأكد من عمله بلا توقف */
+    animation-name: float;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; /* 👈 هذا يضمن الحركة المستمرة */
 }
 
 @keyframes float {
@@ -105,6 +121,7 @@ body {
 }
 
 .secret-answer:hover {
+    font-family: "Aref Ruqaa", serif;
     opacity: 1;
     animation: none;
 }
@@ -256,7 +273,7 @@ body {
 }
 
 h1, h2 {
-    font-family: Arial, sans-serif;
+    font-family: "Aref Ruqaa", serif;
     font-weight: 700;
 }
 
@@ -301,7 +318,7 @@ h2 {
 }
 
 .music-btn {
-    background: var(--primary-color);
+    background: var(--button-color); /* قمت بتعديلها لتأخذ نفس لون الأزرار */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -314,5 +331,5 @@ h2 {
 
 .music-btn:hover {
     transform: scale(1.05);
-    background: var(--secondary-color);
-} 
+    background: var(--button-hover);
+}

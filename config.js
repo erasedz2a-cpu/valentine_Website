@@ -5,7 +5,7 @@
 const CONFIG = {
     // Your Valentine's name that will appear in the title
     // Example: "Jade", "Sarah", "Mike"
-    valentineName: "3asaly",
+    valentineName: "عسولتي",
 
     // The title that appears in the browser tab
     // You can use emojis! 💝 💖 💗 💓 💞 💕
@@ -22,35 +22,35 @@ const CONFIG = {
     // Customize each question and its possible responses
     questions: {
         first: {
-            text: "Do you like me?",                                    // First interaction
-            yesBtn: "Yes",                                             // Text for "Yes" button
-            noBtn: "No",                                               // Text for "No" button
+            text: "بتحبيني؟",                                    // First interaction
+            yesBtn: "يب",                                             // Text for "Yes" button
+            noBtn: "لاع",                                               // Text for "No" button
             secretAnswer: "مش بحبك, بعشقك"           // Secret hover message
         },
         second: {
-            text: "How much do you love me?",                          // For the love meter
-            startText: "This much!",                                   // Text before the percentage
-            nextBtn: "Next ❤️"                                         // Text for the next button
+            text: "قد ايع يعني",                          // For the love meter
+            startText: "قد كدا!",                                   // Text before the percentage
+            nextBtn: "الي بعدوو ❤️"                                         // Text for the next button
         },
         third: {
-            text: "Will you be my Valentine on February 14th, 2025? 🌹", // The big question!
-            yesBtn: "Yes!",                                             // Text for "Yes" button
-            noBtn: "No"                                                 // Text for "No" button
+            text: "هتبقي المزه بتاعتي ف عيد الحب دا 14/2/2026🌹", // The big question!
+            yesBtn: "يب و كل الي جي 😙",                                             // Text for "Yes" button
+            noBtn: "مش شيقاكك🙄🙄"                                                 // Text for "No" button
         }
     },
 
     // Love meter messages
     // They show up depending on how far they slide the meter
     loveMessages: {
-        extreme: "WOOOOW You love me that much?? 🥰🚀💝",  // Shows when they go past 5000%
-        high: "To infinity and beyond! 🚀💝",              // Shows when they go past 1000%
-        normal: "And beyond! 🥰"                           // Shows when they go past 100%
+        extreme: "ايوا كدا بعشقككككك 🥰🚀💝",  // Shows when they go past 5000%
+        high: "كتري شويه انت تطوليي😁😁 🚀💝",              // Shows when they go past 1000%
+        normal: "صفر بس يا فلاحهه"                           // Shows when they go past 100%
     },
 
     // Messages that appear after they say "Yes!"
     celebration: {
-        title: "Yay! I'm the luckiest person in the world! 🎉💝💖💝💓",
-        message: "Give a kiss to your bearyy",
+        title: "هييهيي بعشج امك و الي جابوكي يمزه 🎉💝💖💝💓",
+        message: "يلا هاتي بوسه واحلي مسا علي فخادك",
         emojis: "🎁💖🤗💝💋❤️💕💋💋💋💋"  // These will bounce around
     },
 
